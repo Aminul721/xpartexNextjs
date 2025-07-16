@@ -1,7 +1,13 @@
 import React from "react";
 import Image from 'next/image'
+interface PropsType {
+  id: number | string;
+  img: string | any;
+  title: string;
+  className?: string;
+}
 
-const PortfolioCard = ({id, img, title}) => {
+const PortfolioCard:React.FC<PropsType> = ({id, img, title}) => {
     return (
         <>
             <div className="portfolio-card bg-white" key={id}>

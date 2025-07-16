@@ -23,7 +23,7 @@ const DesignEngineering = () => {
                                     ];
                                 const extraClass = `card_${index+1} ${cardClasses[index]}` || '';
                                 return (
-                                    <DesignCard key={id} icon={icon} title={title} desc={desc} className={`${extraClass} rounded`} />
+                                    <DesignCard id={id} key={id} icon={icon} title={title} desc={desc} className={`${extraClass} rounded`} />
                                 )
                             })
                         }
