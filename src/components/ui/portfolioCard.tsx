@@ -4,7 +4,6 @@ interface PropsType {
   id: number | string;
   img: string | any;
   title: string;
-  className?: string;
 }
 
 const PortfolioCard:React.FC<PropsType> = ({id, img, title}) => {

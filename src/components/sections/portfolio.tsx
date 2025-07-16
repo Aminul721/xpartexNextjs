@@ -16,7 +16,7 @@ const Portfolio = () => {
                         {
                             portfolioCard.map(({id, img, title}, index) => {
                                 return (
-                                    <PortfolioCard key={id} img={img} title={title}/>
+                                    <PortfolioCard id={id} key={id} img={img} title={title}/>
                                 )
                             })
                         }
