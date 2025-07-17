@@ -1,9 +1,13 @@
+import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Brand from "@/components/sections/brand";
 import Construction from "@/components/sections/construction";
 import CreateWebsite from "@/components/sections/createWebsite";
 import DesignEngineering from "@/components/sections/designEngineering";
+import DigitalExp from "@/components/sections/digitalExp";
+import MockUP from "@/components/sections/mockUP";
 import Portfolio from "@/components/sections/portfolio";
+import WeDo from "@/components/sections/weDo";
 import Image from "next/image";
 
 export default function Home() {
@@ -16,17 +20,11 @@ export default function Home() {
         <Portfolio/>
         <Brand/>
         <Construction/>
-        {/* <Image className=''
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        /> */}
+        <WeDo/>
+        <MockUP/>
+        <DigitalExp/>
       </main>
-      <footer >
-        footer
-      </footer>
+      <Footer/>
     </div>
   );
 }
